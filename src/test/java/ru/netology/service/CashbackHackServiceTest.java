@@ -8,7 +8,7 @@ public class CashbackHackServiceTest {
     CashbackHackService service = new CashbackHackService();
 
     @Test
-    public void shouldIfAmountLesss() {
+    public void shouldIfAmountLess() {
         int amount = 900;
 
         int actual = service.remain(amount);
@@ -46,12 +46,13 @@ public class CashbackHackServiceTest {
 
         assertEquals(actual, expected);
     }
+
     @Test
     public void shouldIfAmountOverBoundary() {
-        int amount = 1003;
+        int amount = 1001;
 
         int actual = service.remain(amount);
-        int expected = 997;
+        int expected = 999;
 
         assertEquals(actual, expected);
     }
