@@ -8,7 +8,7 @@ public class CashbackHackServiceTest {
     CashbackHackService service = new CashbackHackService();
 
     @Test
-    public void shouldIfAmountLess() {
+    public void shouldIfAmountLesss() {
         int amount = 900;
 
         int actual = service.remain(amount);
